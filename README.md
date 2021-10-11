@@ -1,1 +1,2 @@
-# xirpl3-gadget_store
+# Gadget Store - Coming Soon Page
+xirpl3-gadget_store
