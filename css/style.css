@@ -1,0 +1,294 @@
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-image: url('../images/banner-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    min-height: 100vh;
+}
+
+header nav {
+    height: 10vh;
+    transition: all .3s ease-in-out;
+}
+
+header nav a {
+    color: #fff;
+    font-weight: 700;
+    margin: 0 15px;
+    transition: all .3s ease-in-out;
+}
+
+header nav a:hover {
+    color: #131a48;
+}
+
+header nav .btn-primary {
+    background: #fff;
+    border-radius: 2em;
+    color: #2273f8;
+    border: none;
+    padding: 10px 20px;
+}
+
+header nav .btn-primary:hover {
+    background: #131a48;
+}
+
+.logo-scroll {
+    display: none;
+}
+
+.fixed-top {
+    height: 7vh;
+    background: #fff;
+}
+
+.fixed-top .logo {
+    display: none;
+}
+
+.fixed-top .logo-scroll {
+    display: block;
+}
+
+.fixed-top a {
+    color: #131a48;
+}
+
+.fixed-top .btn-primary {
+    background: #2273f8;
+    color: #fff;
+}
+
+.main-content {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.main-content h1 {
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 66px;
+}
+
+.main-content p {
+    color: #ddd;
+    margin: 30px 0 50px 0;
+}
+
+.main-content .btn-primary {
+    border-radius: 2em;
+    border: none;
+    background: #131a48;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 700;
+}
+
+.main-content .btn-primary:hover {
+    background: #fff;
+    color: #131a48;
+}
+
+.main-content img,
+#features img {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-40px);
+    }
+}
+
+#about {
+    padding: 100px 0;
+}
+
+#about h4 {
+    color: #2273f8;
+    font-size: 22px;
+}
+
+#about h2 {
+    color: #000;
+    font-weight: 700;
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+#about p {
+    color: #555;
+}
+
+#about span {
+    display: block;
+    color: #000;
+    margin: 5px 0;
+}
+
+#about span i {
+    color: #2273f8;
+}
+
+#about img {
+    border-radius: 10px;
+}
+
+#features,
+#product {
+    padding: 100px 0;
+}
+
+#features h1,
+#product h1,
+#contact h1 {
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+    font-size: 34px;
+}
+
+#features p.subtitle,
+#product p.subtitle,
+#reviews p.subtitle,
+#contact p.subtitle {
+    color: #555;
+    text-align: center;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+#features .icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px dashed #2273f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#features .icon i {
+    color: #2273f8;
+    font-size: 25px;
+}
+
+#features h5 {
+    font-weight: 700;
+}
+
+#features .row p {
+    color: #555;
+}
+
+#product .pricing-card {
+    text-align: center;
+    background: #fafafa;
+    padding: 40px;
+    border: 1px solid #eff0f1;
+    border-radius: 10px;
+}
+
+#product .pricing-card h5 {
+    color: #2273f8;
+    font-size: 20px;
+}
+
+#product .pricing-card img {
+    margin: 20px 0;
+}
+
+#product .pricing-card h4 {
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+#product .btn-primary {
+    background: #2273f8;
+    color: #fff;
+    border-radius: 2em;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+}
+
+#product .btn-primary:hover {
+    background: transparent;
+    border: 2px solid #2273f8;
+    color: #2273f8;
+}
+
+#reviews {
+    background-image: url('../images/banner-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+
+#reviews h1 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 34px;
+    color: #fff;
+}
+
+#reviews p.subtitle {
+    color: #ddd;
+}
+
+#reviews .owl-carousel {
+    margin-top: 100px;
+}
+
+#reviews .owl-carousel .item {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 700px;
+    color: #fff;
+}
+
+#reviews .item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#reviews .item h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+#reviews .item h5 {
+    font-weight: 300;
+}
+
+#reviews .item p {
+    font-style: italic;
+}
+
+#reviews .item i {
+    color: #f39c12;
+}
+
+#row {
+    background-color: #fff;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-left: 0;
+}
